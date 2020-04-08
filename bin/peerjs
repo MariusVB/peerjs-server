@@ -30,7 +30,7 @@ const opts = require("optimist")
       demand: false,
       alias: "k",
       description: "connection key",
-      default: "peerjs"
+      default: "crisis-secret"
     },
     sslkey: {
       demand: false,
@@ -52,7 +52,8 @@ const opts = require("optimist")
     },
     allow_discovery: {
       demand: false,
-      description: "allow discovery of peers"
+      description: "allow discovery of peers",
+      default: true
     },
     proxied: {
       demand: false,
